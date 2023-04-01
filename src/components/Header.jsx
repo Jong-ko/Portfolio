@@ -11,10 +11,10 @@ export function Header() {
 
   return (
     <>
-    <div className="flex flex-row">
-      <p className="m-4 text-xl">Jeremy Ongko</p>
-      <p className="m-4 text-xl">Full Stack Web Dev</p>
-      <p className="m-4 text-xl">Based in Atlanta</p>
+    <div className="flex flex-row self-stretch text-sm md:text-xl uppercase font-extralight">
+      <p className="m-4 self-stretch">Jeremy Ongko</p>
+      <p className="m-4 self-stretch">Full Stack Web Dev</p>
+      <p className="m-4 self-stretch">Based in Atlanta</p>
       <MenuIcon toggleMenu={toggleMenu} isOpen={isOpen} /> 
     </div>
      <Router isOpen={isOpen} />
