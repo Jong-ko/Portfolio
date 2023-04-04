@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export function Router({ isOpen }) {
+export function Router({ toggleMenu, isOpen }) {
   return (
     <nav role="navigation" className={`${isOpen ? "block" : "hidden"} fixed right-0 w-1/2 bg-secondary `}>
       <div className="flex-1 relative w-full sm:max-w-4xl sm:mx-auto h-screen sticky">
@@ -9,6 +9,7 @@ export function Router({ isOpen }) {
             <Link
               href="/"
               className="px-3 my-10 rounded-md text-4xl font-medium text-white hover:text-white hover:bg-gray-700 text-4xl mb-10"
+              onClick={toggleMenu}
             >
               Home
             </Link>
@@ -17,6 +18,7 @@ export function Router({ isOpen }) {
             <Link
               href="/projects"
               className="px-3 my-10 rounded-md text-4xl font-medium text-white hover:text-white hover:bg-gray-700 text-4xl mb-10"
+              onClick={toggleMenu}
             >
               Projects
             </Link>

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import AuctionInventory from "public/Images/AuctionInventory.png"
+import AuctionInventory from "public/Images/SceneIt.png"
 
 export function ProjectThree() {
   return (
@@ -8,11 +8,18 @@ export function ProjectThree() {
         <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
           Scene It
         </h3>
+        <p className="font-light justify-self-center">
+          <a href="https://github.com/Jong-ko/Sceneit-Project" target="_blank">
+            Github{" "}
+          </a>
+          |{" "}
+          <a href="https://jong-ko.github.io/Sceneit-Project/" target="_blank">
+            Live Site
+          </a>
+        </p>
         <p className="font-light">
-          I am a driven Full Stack Web developer and Product Photographer, constantly seeking growth
-          and innovation. My passion for creating with my hands fuels me to forge connections and
-          relationships with others. When not working, I enjoy snowboarding, discovering new music,
-          and cooking.
+          Created a front end that consumed RESTful APIs that allowed users to access a database of
+          movies and save them to a personal list.
         </p>
       </div>
       <div className="col-span-1 self-center ">

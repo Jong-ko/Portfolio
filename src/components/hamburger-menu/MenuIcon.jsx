@@ -1,6 +1,6 @@
 export const MenuIcon = ({ toggleMenu, isOpen }) => {
   return (
-    <div className="flex-1 flex-column items-center justify-end sticky top-0">
+    <div className="flex-1 inline-flex flex-column items-center justify-end">
       <button className="p-2 rounded-md text-gray-400 hover:text-white" onClick={toggleMenu}>
         <span className="sr-only">Open main menu</span>
         {isOpen ? (
