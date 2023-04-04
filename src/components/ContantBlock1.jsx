@@ -22,22 +22,27 @@ export function ContentBlock1() {
             Contact Me
           </h3>
           <div className="font-light">Jeremy Ongko</div>
-          <a href="mailto:contact@ongkojeremy.com" className="font-light">
+          <a href="mailto:contact@ongkojeremy.com" target="_blank" className="font-light">
             Contact@OngkoJeremy.com
           </a>
           <div className="font-light">(404)993-9626</div>
           <br></br>
           <a
             href="https://docs.google.com/document/d/e/2PACX-1vQ41OQPKwln9ve0sKrU3bfFPyvHNlHCzFGi5L8t3pKWt8FEPQUW35qu6DeXQDqGUbwmynHaIf8GzNVt/pub"
+            target="_blank"
             className="font-light"
           >
             Resume
           </a>
           <br></br>
-          <a href="https://www.linkedin.com/in/jeremyongko/" className="font-light block">
+          <a
+            href="https://www.linkedin.com/in/jeremyongko/"
+            target="_blank"
+            className="font-light block"
+          >
             LinkedIn
           </a>
-          <a href="https://github.com/Jong-ko" className="font-light block">
+          <a href="https://github.com/Jong-ko" target="_blank" className="font-light block">
             Github
           </a>
         </div>

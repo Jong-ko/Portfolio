@@ -1,5 +1,5 @@
 import { Router } from "@/components/router/Router"
-import { MenuIcon } from "@/components/hamburger-menu/menuIcon"
+import { MenuIcon } from "@/components/hamburger-menu/MenuIcon"
 import { useState } from "react"
 
 export function Header() {
