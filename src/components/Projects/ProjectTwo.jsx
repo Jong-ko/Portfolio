@@ -22,11 +22,15 @@ export function ProjectTwo() {
           Auction Inventory
         </h3>
         <p className="font-light justify-self-center">
-          <a href="https://github.com/5hakazulu/FullStackProjects" target="_blank">
-            Github{" "}
+          <a
+            href="https://github.com/5hakazulu/FullStackProjects"
+            target="_blank"
+            className="underline"
+          >
+            Github
           </a>{" "}
           |{" "}
-          <a href="https://fullstackproject-04oi.onrender.com/" target="_blank">
+          <a href="https://fullstackproject-04oi.onrender.com/" target="_blank" className="underline">
             Live Site
           </a>
         </p>

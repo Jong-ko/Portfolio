@@ -9,11 +9,11 @@ export function ProjectThree() {
           Scene It
         </h3>
         <p className="font-light justify-self-center">
-          <a href="https://github.com/Jong-ko/Sceneit-Project" target="_blank">
-            Github{" "}
+          <a href="https://github.com/Jong-ko/Sceneit-Project" target="_blank" className="underline">
+            Github
           </a>
-          |{" "}
-          <a href="https://jong-ko.github.io/Sceneit-Project/" target="_blank">
+          {" "}|{" "}
+          <a href="https://jong-ko.github.io/Sceneit-Project/" target="_blank" className="underline">
             Live Site
           </a>
         </p>

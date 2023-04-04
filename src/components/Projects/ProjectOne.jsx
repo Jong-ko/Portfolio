@@ -10,14 +10,19 @@ export function ProjectOne() {
         </h3>
         <p className="font-light justify-self-center">
           Github{" "}
-          <a href="https://github.com/Jong-ko/TradeUpFront" target="_blank">
-            Frontend{" "}
-          </a>
-          <a href="https://github.com/Jong-ko/TradeUpBack" target="_blank">
+          <a href="https://github.com/Jong-ko/TradeUpFront" target="_blank" className="underline">
+            Frontend
+          </a> 
+          &nbsp;
+          <a href="https://github.com/Jong-ko/TradeUpBack" target="_blank" className="underline">
             Backend
           </a>{" "}
           |{" "}
-          <a href="http://ec2-3-138-123-221.us-east-2.compute.amazonaws.com/" target="_blank">
+          <a
+            href="http://ec2-3-138-123-221.us-east-2.compute.amazonaws.com/"
+            target="_blank"
+            className="underline"
+          >
             Live Site
           </a>
         </p>
