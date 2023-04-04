@@ -1,5 +1,5 @@
 import Image from "next/image"
-import AuctionInventory from "public/Images/AuctionInventory.png"
+import BarterHouse from "public/Images/BarterHouse.png"
 
 export function ProjectOne() {
   return (
@@ -8,16 +8,32 @@ export function ProjectOne() {
         <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
           Barter House
         </h3>
+        <p className="font-light justify-self-center">
+          Github{" "}
+          <a href="https://github.com/Jong-ko/TradeUpFront" target="_blank">
+            Frontend{" "}
+          </a>
+          <a href="https://github.com/Jong-ko/TradeUpBack" target="_blank">
+            Backend
+          </a>{" "}
+          |{" "}
+          <a href="http://ec2-3-138-123-221.us-east-2.compute.amazonaws.com/" target="_blank">
+            Live Site
+          </a>
+        </p>
         <p className="font-light">
-          I am a driven Full Stack Web developer and Product Photographer, constantly seeking growth
-          and innovation. My passion for creating with my hands fuels me to forge connections and
-          relationships with others. When not working, I enjoy snowboarding, discovering new music,
-          and cooking.
+          An online platform that allows users to trade items with each other. Users can post items
+          they no longer need and are willing to exchange for something else, browse other users'
+          items, and communicate with potential trading partners. The website offers a convenient
+          and eco-friendly way to get rid of unwanted items and acquire new ones without spending
+          money. The interface is user-friendly and intuitive, making it easy to search for items,
+          make offers, and finalize trades. With the item swap app, users can save money, reduce
+          waste, and connect with others in their community who share similar interests.
         </p>
       </div>
       <div className="col-span-1 self-center ">
         <Image
-          src={AuctionInventory}
+          src={BarterHouse}
           alt="Picture of the author"
           // width={500} automatically provided
           // height={500} automatically provided

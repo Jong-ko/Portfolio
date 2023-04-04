@@ -17,7 +17,7 @@ export function Header() {
       <p className="m-4 self-stretch">Based in Atlanta</p>
       <MenuIcon toggleMenu={toggleMenu} isOpen={isOpen} /> 
     </div>
-     <Router isOpen={isOpen} />
+     <Router toggleMenu={toggleMenu} isOpen={isOpen} />
      </>
   )
 }
