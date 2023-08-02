@@ -1,8 +1,9 @@
-export function ContentBlock1() {
+export function ContentBlock1Resp() {
   return (
     <>
-      <div className="grid grid-cols-2 grid-rows-3">
-        <div className="col-span-1">
+      <div className="flex flex-col pb-10">
+        <div className=" md:max-w-2xl">
+          <div className="">
           <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
             Who you lookin at
           </h3>
@@ -15,9 +16,11 @@ export function ContentBlock1() {
             acquiring new skills and techniques, and I am committed to using my abilities to
             positively impact the lives of others.
           </p>
+          </div>
         </div>
-        <div></div>
-        <div className="col-span-1 col-start-2 pt-8">
+        <div className="flex flex-row md:flex-row-reverse">
+        <div className="pb-10 pt-8 items-end">
+
           <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
             Contact Me
           </h3>
@@ -46,8 +49,8 @@ export function ContentBlock1() {
             Github
           </a>
         </div>
-
-        <div className="col-span-2 col-start-1 font-light">
+        </div>
+        <div className="pb-10 font-light">
           <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase content-center">
             Projects
           </h3>
