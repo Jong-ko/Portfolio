@@ -1,9 +1,9 @@
-import { ContentBlock1 } from "@/components/ContantBlock1"
+import { HomePageContent } from "@/components/HomePageContent"
 
 function Home() {
   return (
     <>
-      <ContentBlock1 />
+      <HomePageContent />
     </>
   )
 }

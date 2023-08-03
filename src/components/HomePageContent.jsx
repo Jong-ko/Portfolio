@@ -1,4 +1,4 @@
-export function ContentBlock1Resp() {
+export function HomePageContent() {
   return (
     <>
       <div className="flex flex-col pb-10">
