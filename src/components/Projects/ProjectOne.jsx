@@ -39,7 +39,7 @@ export function ProjectOne() {
       <div className="col-span-1 self-center ">
         <Image
           src={BarterHouse}
-          alt="BarterHouse Website"
+          alt="Picture of the author"
           // width={500} automatically provided
           // height={500} automatically provided
           // blurDataURL="data:..." automatically provided
