@@ -3,9 +3,22 @@ import BarterHouse from "public/Images/BarterHouse.png"
 
 export function ProjectOne() {
   return (
-    <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 pb-8">
-      <div className="col-span-1">
-        <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
+    <div className="pb-10">
+      <div className="">
+        <Image
+          src={BarterHouse}
+          alt="BarterHouse Website"
+          // width={500} automatically provided
+          // height={500} automatically provided
+          // blurDataURL="data:..." automatically provided
+          // layout="fill" // required
+          objectFit="cover" // change to suit your needs
+          placeholder="blur" // Optional blur-up while loading
+          className="pb-2"
+        />
+      </div>
+      <div className="">
+        <h3 className="text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
           Barter House
         </h3>
         <p className="font-light justify-self-center">
@@ -35,19 +48,6 @@ export function ProjectOne() {
           make offers, and finalize trades. With the item swap app, users can save money, reduce
           waste, and connect with others in their community who share similar interests.
         </p>
-      </div>
-      <div className="col-span-1 self-center ">
-        <Image
-          src={BarterHouse}
-          alt="BarterHouse Website"
-          // width={500} automatically provided
-          // height={500} automatically provided
-          // blurDataURL="data:..." automatically provided
-          // layout="fill" // required
-          objectFit="cover" // change to suit your needs
-          placeholder="blur" // Optional blur-up while loading
-          className="self-center pl-8"
-        />
       </div>
     </div>
   )
