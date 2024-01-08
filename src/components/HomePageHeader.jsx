@@ -1,8 +1,11 @@
+import Image from "next/image"
+import ProfilePicture from "public/Images/JeremyOngkoProfilePicture.jpg"
+
 export function HomePageHeader() {
   return (
     <>
       <div className="flex flex-col pb-10">
-        <div className=" md:max-w-2xl">
+        <div className=" md:max-w-2xl pb-10">
           <div className="">
             <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
               Who you lookin at
@@ -18,8 +21,19 @@ export function HomePageHeader() {
             </p>
           </div>
         </div>
-        <div className="flex flex-row md:flex-row-reverse">
-          <div className="pb-10 pt-8 items-end text-right">
+        <div className="flex flex-col md:flex-row justify-between">
+          <Image
+            src={ProfilePicture}
+            alt="Jeremy Ongko"
+            width={300}
+            height={500}
+            // blurDataURL="data:..." automatically provided
+            // layout="fill" // required
+            objectFit="cover" // change to suit your needs
+            placeholder="blur" // Optional blur-up while loading
+            className=" pb-10 content-center"
+          />
+          <div className="pb-10 items-end md:text-right">
             <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
               Contact Me
             </h3>

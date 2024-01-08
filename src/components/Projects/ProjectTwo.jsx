@@ -3,8 +3,8 @@ import Image from "next/image"
 
 export function ProjectTwo() {
   return (
-    <div className="md:flex pb-8 justify-center">
-      <div className="self-center m:pr-8">
+    <div className="md:flex justify-center pb-10 gap-3">
+      <div className="flex-1 self-center m:pr-8">
         <Image
           src={AuctionInventory}
           alt="Picture of the author"
@@ -12,12 +12,11 @@ export function ProjectTwo() {
           height={5000}
           // blurDataURL="data:..." automatically provided
           // layout="fill" // required
-          objectFit="cover" // change to suit your needs
           placeholder="blur" // Optional blur-up while loading
-          className="pr-8"
+          className="pb-5"
         />
       </div>
-      <div className="">
+      <div className="flex-1">
         <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
           Auction Inventory
         </h3>
