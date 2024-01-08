@@ -3,13 +3,13 @@ import BarterHouse from "public/Images/BarterHouse.png"
 
 export function ProjectOne() {
   return (
-    <div className="pb-10">
+    <div className="pb-10 md:flex md:flex-row-reverse place-items-center justify-center">
       <div className="">
         <Image
           src={BarterHouse}
           alt="BarterHouse Website"
-          // width={500} automatically provided
-          // height={500} automatically provided
+          width={5000}
+          height={5000}
           // blurDataURL="data:..." automatically provided
           // layout="fill" // required
           objectFit="cover" // change to suit your needs

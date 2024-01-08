@@ -7,8 +7,8 @@ function Projects() {
     <>
       <div className="flex flex-col">
         <ProjectOne className="" />
-        <ProjectOne className="" />
-        <ProjectOne className="" />
+        <ProjectTwo className="" />
+        <ProjectThree className="" />
         {/* <ProjectTwo />
         <ProjectThree /> */}
       </div>

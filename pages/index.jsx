@@ -1,9 +1,11 @@
-import { HomePageContent } from "@/components/HomePageContent"
+import {HomePageHeader } from "@/components/HomePageHeader"
+import { HomePageProjects } from "@/components/HomePageProjects"
 
 function Home() {
   return (
     <>
-      <HomePageContent />
+      <HomePageHeader />
+      <HomePageProjects />
     </>
   )
 }
