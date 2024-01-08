@@ -3,8 +3,8 @@ import AuctionInventory from "public/Images/SceneIt.png"
 
 export function ProjectThree() {
   return (
-    <div className="pb-10 md:flex md:flex-row-reverse justify-center">
-      <div className="self-center ">
+    <div className="md:flex md:flex-row-reverse place-items-center justify-center pb-10 gap-3">
+      <div className="flex-1">
         <Image
           src={AuctionInventory}
           alt="Picture of the author"
@@ -12,13 +12,12 @@ export function ProjectThree() {
           height={5000}
           // blurDataURL="data:..." automatically provided
           // layout="fill" // required
-          objectFit="contain" // change to suit your needs
           placeholder="blur" // Optional blur-up while loading
-          className="self-center"
+          className="pb-5"
         />
       </div>
-      <div className="">
-        <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
+      <div className="flex-1">
+        <h3 className="text-4xl pb-5 md:text-6xl font-extrabold tracking-tighter uppercase">
           Scene It
         </h3>
         <p className="font-light justify-self-center">
