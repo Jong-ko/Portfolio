@@ -5,10 +5,13 @@ import { ProjectThree } from "@/components/Projects/ProjectThree"
 function Projects() {
   return (
     <>
-
-      <ProjectOne />
-      <ProjectTwo />
-      <ProjectThree />
+      <div className="flex flex-col">
+        <ProjectOne className="" />
+        <ProjectTwo className="" />
+        <ProjectThree className="" />
+        {/* <ProjectTwo />
+        <ProjectThree /> */}
+      </div>
     </>
   )
 }

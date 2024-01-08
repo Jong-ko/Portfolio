@@ -3,13 +3,13 @@ import Image from "next/image"
 
 export function ProjectTwo() {
   return (
-    <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 pb-8">
-      <div className="col-span-1 self-center m:pr-8">
+    <div className="md:flex pb-8 justify-center">
+      <div className="self-center m:pr-8">
         <Image
           src={AuctionInventory}
           alt="Picture of the author"
-          // width={500} automatically provided
-          // height={500} automatically provided
+          width={5000}
+          height={5000}
           // blurDataURL="data:..." automatically provided
           // layout="fill" // required
           objectFit="cover" // change to suit your needs
@@ -17,7 +17,7 @@ export function ProjectTwo() {
           className="pr-8"
         />
       </div>
-      <div className="col-span-1">
+      <div className="">
         <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
           Auction Inventory
         </h3>
