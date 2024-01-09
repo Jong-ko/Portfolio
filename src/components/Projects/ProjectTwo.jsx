@@ -1,9 +1,12 @@
 import AuctionInventory from "public/Images/AuctionInventory.png"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export function ProjectTwo() {
   return (
-    <div className="md:flex justify-center pb-10 gap-3">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }} className="md:flex justify-center pb-10 gap-3">
       <div className="flex-1 self-center m:pr-8">
         <Image
           src={AuctionInventory}
@@ -45,6 +48,6 @@ export function ProjectTwo() {
           enhance their customer experience.
         </p>
       </div>
-    </div>
+    </motion.div>
   )
 }

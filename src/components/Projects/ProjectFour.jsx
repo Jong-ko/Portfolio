@@ -1,14 +1,9 @@
 import Image from "next/image"
 import BarterHouse from "public/Images/BarterHouse.png"
-import { motion } from "framer-motion"
 
 export function ProjectOne() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      className="md:flex md:flex-row-reverse place-items-center justify-center pb-10 gap-3"
-    >
+    <div className="md:flex md:flex-row-reverse place-items-center justify-center pb-10 gap-3">
       <div className="flex-1">
         <Image
           src={BarterHouse}
@@ -29,7 +24,7 @@ export function ProjectOne() {
           Github{" "}
           <a href="https://github.com/Jong-ko/TradeUpFront" target="_blank" className="underline">
             Frontend
-          </a>
+          </a> 
           &nbsp;
           <a href="https://github.com/Jong-ko/TradeUpBack" target="_blank" className="underline">
             Backend
@@ -53,6 +48,6 @@ export function ProjectOne() {
           waste, and connect with others in their community who share similar interests.
         </p>
       </div>
-    </motion.div>
+    </div>
   )
 }

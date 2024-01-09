@@ -5,20 +5,19 @@ import { motion } from "framer-motion"
 
 export function HomePageProjects() {
   return (
-    
-    <div className="pb-10 font-light">
+    <motion.div className="pb-10 font-light">
       <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase content-center text-center">
         Projects
-        </h3>
-        <>
-          <div className="flex flex-col">
-            <ProjectOne className="" />
-            <ProjectTwo className="" />
-            <ProjectThree className="" />
-            {/* <ProjectTwo />
+      </h3>
+      <>
+        <div className="flex flex-col">
+          <ProjectOne className="" />
+          <ProjectTwo className="" />
+          <ProjectThree className="" />
+          {/* <ProjectTwo />
         <ProjectThree /> */}
-          </div>
-        </>
-    </div>
+        </div>
+      </>
+    </motion.div>
   )
 }
