@@ -1,9 +1,12 @@
 import Image from "next/image"
 import AuctionInventory from "public/Images/SceneIt.png"
+import { motion } from "framer-motion"
 
 export function ProjectThree() {
   return (
-    <div className="md:flex md:flex-row-reverse place-items-center justify-center pb-10 gap-3">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }} className="md:flex md:flex-row-reverse place-items-center justify-center pb-10 gap-3">
       <div className="flex-1">
         <Image
           src={AuctionInventory}
@@ -42,6 +45,6 @@ export function ProjectThree() {
           movies and save them to a personal list.
         </p>
       </div>
-    </div>
+    </motion.div>
   )
 }
