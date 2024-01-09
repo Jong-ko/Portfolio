@@ -20,9 +20,9 @@ export function Header() {
   return (
     <>
       <motion.div
-        // initial={{ opacity: 0, y: -20 }}
-        // animate={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.7 }}
+        // initial={{ x: 350, scale: 1.5 }}
+        // animate={{ x: 0, scale: 1 }}
+        // transition={{ delay: 1, duration: 0.7 }}
         className="flex flex-row text-sm md:text-xl uppercase font-extralight"
       >
         <motion.p
@@ -37,7 +37,7 @@ export function Header() {
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ delay: 0.33, duration: 0.5 }}
           // variants={headerAnimation}
           className="m-4"
         >
@@ -46,7 +46,7 @@ export function Header() {
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.5 }}
+          transition={{ delay: 0.66, duration: 0.5 }}
           // variants={headerAnimation}
           className="m-4"
         >
@@ -56,7 +56,7 @@ export function Header() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.5 }}
+          transition={{ delay: 1, duration: 0.7 }}
           className="flex-grow hidden md:block m-4"
         >
           <p className="text-right">

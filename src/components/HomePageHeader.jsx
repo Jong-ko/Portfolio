@@ -1,12 +1,20 @@
 import Image from "next/image"
 import ProfilePicture from "public/Images/JeremyOngkoProfilePicture.jpg"
+import { motion } from "framer-motion"
+
+const variants = {}
 
 export function HomePageHeader() {
   return (
     <>
       <div className="flex flex-col pb-10">
         <div className=" md:max-w-2xl pb-10">
-          <div className="">
+          <motion.div
+            initial={{ opacity: 0, x: 200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{delay: 1, duration: 0.7 }}
+            className=""
+          >
             <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
               Who you lookin at
             </h3>
@@ -19,21 +27,32 @@ export function HomePageHeader() {
               passion for acquiring new skills and techniques, and I am committed to using my
               abilities to positively impact the lives of others.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col md:flex-row justify-between">
-          <Image
-            src={ProfilePicture}
-            alt="Jeremy Ongko"
-            width={300}
-            height={500}
-            // blurDataURL="data:..." automatically provided
-            // layout="fill" // required
-            objectFit="cover" // change to suit your needs
-            placeholder="blur" // Optional blur-up while loading
-            className=" pb-10 content-center"
-          />
-          <div className="pb-10 items-end md:text-right">
+          <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.7 }}
+          >
+            <Image
+              src={ProfilePicture}
+              alt="Jeremy Ongko"
+              width={300}
+              height={500}
+              // blurDataURL="data:..." automatically provided
+              // layout="fill" // required
+              objectFit="cover" // change to suit your needs
+              placeholder="blur" // Optional blur-up while loading
+              className=" pb-10 content-center"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1, duration: 0.7 }}
+            className="pb-10 items-end md:text-right"
+          >
             <h3 className="-m-1 pb-5 text-4xl md:text-6xl font-extrabold tracking-tighter uppercase">
               Contact Me
             </h3>
@@ -61,7 +80,7 @@ export function HomePageHeader() {
             <a href="https://github.com/Jong-ko" target="_blank" className="font-light block">
               Github
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
